@@ -8,52 +8,15 @@ It bundles a Python package named `oura-full-read` and exposes it through a ligh
 
 This agent skill was built around the Oura smart ring product family, including Oura Ring 4 devices.
 
-Useful Amazon reference links:
+Product link:
 
-- [Browse Oura Ring 4 on Amazon](https://amzn.to/4d9t82s): general browse/fallback link. This resolves to an Amazon Store page with Oura Ring 4 context and the `completetechv-20` affiliate tag.
-- [Oura Ring 4 Silver Size 8 reference listing](https://amzn.to/49lQ9Os): variant-specific reference link. This currently resolves with ASIN context `B0D9WVSZ56`, identified as an Oura Ring 4 Silver Size 8 listing.
+- [Browse Oura Ring 4 on Amazon](https://amzn.to/4d9t82s)
+
+Disclosure: As an Amazon Associate, I earn from qualifying purchases.
 
 The Bluetooth reader is not limited to one exact size or finish. It is intended for Oura rings that expose the same custom BLE service and for normal BLE devices that expose the standard Heart Rate Service.
 
 This repository does not use the Oura mobile app, Oura Cloud API, or account-backed app data. It works at the local Bluetooth layer, subject to the ring's pairing, bonding, encryption, firmware, and current device state.
-
-## Affiliate Link Strategy
-
-For best buyer experience and affiliate attribution, use a ring selector instead of sending every user to a single Oura Ring variant.
-
-Recommended selector flow:
-
-1. Let the user choose the model, such as `Oura Ring 4`.
-2. Let the user choose finish or color.
-3. Let the user choose size.
-4. Provide a separate "Need sizing kit first?" path.
-5. Send the final purchase click to the exact Amazon Special Link for that selected size and finish.
-
-Use the general Amazon Store link as a fallback or browse link. Use exact tagged product links for selector results.
-
-Example selector mapping:
-
-```json
-{
-  "oura-ring-4": {
-    "silver": {
-      "8": {
-        "asin": "B0D9WVSZ56",
-        "label": "Oura Ring 4 - Silver - Size 8",
-        "url": "https://www.amazon.com/dp/B0D9WVSZ56?tag=completetechv-20"
-      }
-    }
-  }
-}
-```
-
-Affiliate implementation notes:
-
-- Generate or verify final Amazon links through Amazon Associates SiteStripe, Associates Central, or the Product Advertising API.
-- Keep the `tag` parameter on every Amazon purchase link.
-- Use separate Amazon Associates tracking IDs when you want reporting by placement, such as README, selector, or sizing-kit flow.
-- Include a clear affiliate disclosure near affiliate links or product CTAs.
-- Do not display live Amazon prices, star ratings, review counts, or availability unless that data comes from approved Amazon tooling or API and is used according to Amazon Associates requirements.
 
 ## What It Does
 
