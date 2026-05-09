@@ -1,6 +1,6 @@
 ---
 name: oura-full-reader
-description: Bluetooth and heart-rate reader agent for Oura rings and standard BLE Heart Rate Service devices. Use when Codex needs to scan Bluetooth devices, inspect GATT services/characteristics, read/write/subscribe to BLE characteristics, read standard BLE heart-rate measurements, or use Oura's custom latest heart-rate feature protocol from the bundled oura-full-read package.
+description: Bluetooth and heart-rate reader agent skill for Oura rings and standard BLE Heart Rate Service devices. Use when an agent needs to scan Bluetooth devices, inspect GATT services/characteristics, read/write/subscribe to BLE characteristics, read standard BLE heart-rate measurements, or use Oura's custom latest heart-rate feature protocol from the bundled oura-full-read package.
 ---
 
 # Oura Full Reader
