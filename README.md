@@ -4,6 +4,14 @@
 
 It bundles a Python package named `oura-full-read` and exposes it through a lightweight wrapper at `scripts/oura_full_read.py`. The wrapper lets an agent run the reader directly from this repository without installing the package in editable mode.
 
+## Product Reference
+
+This agent skill was built around the Oura smart ring product family, including the [Oura Ring 4 product listing on Amazon](https://amzn.to/49lQ9Os). That link currently resolves to an Oura Amazon Store URL for ASIN `B0D9WVSZ56`, identified as an Oura Ring 4 Silver Size 8 listing.
+
+The Bluetooth reader is not limited to that exact size or finish. It is intended for Oura rings that expose the same custom BLE service and for normal BLE devices that expose the standard Heart Rate Service.
+
+This repository does not use the Oura mobile app, Oura Cloud API, or account-backed app data. It works at the local Bluetooth layer, subject to the ring's pairing, bonding, encryption, firmware, and current device state.
+
 ## What It Does
 
 This agent skill supports:
