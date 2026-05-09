@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oura Full Reader"
+  short_description: "Bluetooth and heart-rate reader agent"
+  default_prompt: "Use $oura-full-reader to inspect Bluetooth devices and read Oura or standard BLE heart-rate data."
