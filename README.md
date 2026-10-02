@@ -401,4 +401,4 @@ These checks validate metadata, parser behavior, and CLI wiring. They do not pro
 
 ## License
 
-No license file is currently included in this repository.
+Released under the [MIT License](LICENSE).
