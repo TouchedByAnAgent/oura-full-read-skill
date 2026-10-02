@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.jpg" alt="Glowing amber and magenta line-art of a robot hand holding a skill card beside a plain ring that emits radio ripples and a heartbeat waveform." width="100%"></p>
+
 # Oura Full Reader Agent Skill
 
 `oura-full-reader` is an agent skill for Bluetooth inspection and heart-rate reading with Oura rings and standard BLE Heart Rate Service devices.
